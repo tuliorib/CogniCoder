@@ -1,0 +1,11 @@
+{
+  "prompt": "Create cogni_engineer.py. It should perform the following tasks: 1. Accept an input file using the command line argument --input filename.py 2. Run the specified Python file 3. Capture the output and any potential errors 4. Create a JSON output with the following fields: - error: TRUE if an error occurred, FALSE otherwise - executed: The output of the executed code (if any) - error_message: The error message (if any) Requirements: - Handle both bash errors (e.g., file not found) and Python runtime errors - Use appropriate Python libraries for running external commands and capturing output - Implement proper error handling and JSON formatting - Follow PEP 8 style guidelines - Include docstrings and comments for clarity - Use the CogniCoder metadata and block structure",
+  "mode": "NEW",
+  "other_code_files": [
+    "cognicoder.py",
+    "code_patcher.py",
+    "output_parser.py"
+  ],
+  "documentation": [],
+  "error_messages": []
+}

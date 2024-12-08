@@ -1,0 +1,25 @@
+I have updated the code according to the prompt and the existing structure. Here's a detailed explanation of the changes and additions:
+
+1. Filename: The inferred filename is "cml_tagger.py", which is appropriate for a Python script that tags code with CML (Cogni Markup Language).
+
+2. Metadata: I updated the version to 1.1.0 to reflect the addition of new functionality.
+
+3. Imports: The existing imports were kept as they are still relevant for the new functionality.
+
+4. Constants: The existing constants were maintained as they are still applicable.
+
+5. CMLTagger class: The existing class and its methods were kept intact as they provide the core functionality for tagging code.
+
+6. New function - tag_file:
+   - I added the `tag_file` function as requested in the prompt.
+   - It uses Click decorators to create a command-line interface with two options: `--original` and `--output`.
+   - The function reads the original file, determines the language based on the file extension, uses the CMLTagger class to add tags, and saves the result.
+   - If no output path is specified, it creates a default output filename by adding "_tagged" before the extension.
+
+7. Main block: I added a main block to call the `tag_file` function when the script is run directly.
+
+8. CML tags: I ensured that all code blocks are properly tagged with CML tags, including the new `tag_file` function and the main block.
+
+9. Indentation: The code maintains consistent indentation (4 spaces) throughout, including within the new `tag_file` function.
+
+This updated version of the script now provides a command-line interface for tagging files with CML, while maintaining the existing functionality of the CMLTagger class. The new `tag_file` function integrates well with the existing code structure and follows the same coding style and practices.

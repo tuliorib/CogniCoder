@@ -1,0 +1,6 @@
+(.venv) tribeiro@dell15:~/Projects/CogniCoder/parsed_output$ python3 cml_indentation_remover.py.full --original code_analyzer.py.full
+  File "/home/tribeiro/Projects/CogniCoder/parsed_output/cml_indentation_remover.py.full", line 44
+    sample_text = '''
+                  ^
+SyntaxError: unterminated triple-quoted string literal (detected at line 51)
+

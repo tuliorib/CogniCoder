@@ -1,0 +1,18 @@
+# [[cc.block.method.parse_llm_response]]
+    def _parse_llm_response(self, response):
+        """Parse the LLM response into a structured format."""
+        sections = {
+            "summary": "",
+            "functions": "",
+            "changelog": ""
+        }
+        current_section = None
+        for line in response.split('\n'):
+            if line.startswith("[[cc.doc."):
+                current_section = line[8:-2]
+            elif line.startswith("[[/cc.doc."):
+                current_section = None
+            elif current_section and current_section in sections:
+                sections[current_section] += line + "\n"
+        return sections
+# [[/cc.block.method.parse_llm_response]]
